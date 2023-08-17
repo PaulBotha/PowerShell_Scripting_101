@@ -1,8 +1,8 @@
 # Source and destiantion path
 # $ sets a variable 
 
-$SourceFolder = "C:\Users\paulb\Documents\Current_Work"
-$DestinationFolder = "C:\Users\paulb\Desktop\Backup"
+$SourceFolder = "C:\...\...\..\Current_Work"      #change path to your own folders
+$DestinationFolder = "C:\..\...\...\Backup"
 
 #Copy the file from source to destination 
 Copy-Item -Path $SourceFolder\* -Destination $DestinationFolder -Recurse -Force
