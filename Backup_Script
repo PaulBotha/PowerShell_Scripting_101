@@ -9,3 +9,14 @@ Copy-Item -Path $SourceFolder\* -Destination $DestinationFolder -Recurse -Force
 
 #Display complete message 
 Write-Host "Backup Complete" 
+
+
+<#-Recurse:
+The -Recurse parameter indicates that the Copy-Item cmdlet should copy not 
+only the files in the source folder but also all files and subdirectories within the source folder.
+In other words, it tells PowerShell to perform a recursive copy, copying the entire directory structure and its contents.
+
+-Force:
+The -Force parameter is used to forcefully copy files without asking for confirmation, 
+and it also allows overwriting files in the destination folder if they already exist with the same name. 
+Without the -Force parameter, PowerShell would prompt you for confirmation before overwriting files. #>
